@@ -27,7 +27,6 @@ body {
   right: 0%;
 }
 #fullpage {
-  z-index: 100;
   position: absolute;
   left: 25%;
   width: 50%;
