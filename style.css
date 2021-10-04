@@ -7,15 +7,15 @@
 body {
   position: relative;
   font-family: "Courier New", Courier, monospace;
-  font-size: 18px;
-  background: url("./squared-paper-texture.jpg");
+  font-size: 16px;
+  background-color: rgb(243, 202, 126);
 }
 
 .left-code-section,
 .right-code-section {
+  background-color: rgb(230, 205, 214);
   position: fixed;
   min-height: 100vh;
-  background-color: aliceblue;
   width: 25%;
 }
 .left-code-section {
@@ -52,4 +52,43 @@ body {
   transform: translate(-50%, 0%);
   cursor: pointer;
   transition: all 0.25s ease;
+}
+.timeline-wrapper {
+  height: 100vh;
+  padding-right: 10px;
+  position: fixed;
+  top: 0%;
+  right: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.timeline-marker {
+  font-size: 4.75rem;
+  position: absolute;
+  top: 0;
+  right: 100%;
+  transition: all 0.5s ease;
+}
+.timeline-marker p {
+  line-height: 1;
+  margin: 0%;
+  padding: 0%;
+}
+.year-wrapper {
+  height: 5.88vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.year-wrapper p {
+  height: 50%;
+  margin-bottom: 0;
+}
+.year-wrapper img {
+  height: 50%;
+  padding: 0;
+  transform: rotate(90deg);
 }
