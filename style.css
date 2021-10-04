@@ -8,8 +8,9 @@ body {
   position: relative;
   font-family: "Courier New", Courier, monospace;
   font-size: 18px;
-  background-color: rgb(164, 207, 164);
+  background: url("./squared-paper-texture.jpg");
 }
+
 .leftCode,
 .rightCode {
   position: fixed;
@@ -30,4 +31,24 @@ body {
   position: absolute;
   left: 25%;
   width: 50%;
+}
+
+.section {
+  position: relative;
+}
+.inner-div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.page-scroll-button {
+  font-size: 2rem;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  cursor: pointer;
+  transition: all 0.25s ease;
 }
