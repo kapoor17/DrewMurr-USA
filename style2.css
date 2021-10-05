@@ -1,0 +1,93 @@
+* {
+    margin: 0px!important;
+    padding: 0!important;
+    box-sizing: border-box;
+  }
+  ::-webkit-scrollbar{
+      width:0px;
+  }
+  body {
+    position: relative;
+    font-family: "Courier New", Courier, monospace;
+    font-size: 16px;
+    overflow-y: hidden;
+    background-color: rgb(243, 202, 126);
+  }
+  .column{
+      height:100vh;
+  }
+  .bg-code{
+      background: url('./codeBg.png');
+      background-size: cover;
+  }
+  .bg-graph{
+    background: url('./graphBg.png');
+    background-size:contain;
+    overflow-y: scroll;
+
+  }
+  .section{
+      height:100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+      position: relative;
+  }
+  .section p{
+      color:steelblue;
+      width:60%;
+      font-size:16px;
+      font-weight: bold;
+      text-align:center;
+  }
+    .page-scroll-button {
+    color: #87e5ff;
+    font-size: 2rem;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    cursor: pointer;
+    transition: all 0.25s ease;
+  }
+  .timeline-wrapper {
+    height: 100vh;
+    padding-right: 10px;
+    position: fixed;
+    top: 0%;
+    right: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .timeline-marker {
+    font-size: 4.75rem;
+    position: absolute;
+    top: 0;
+    right: 100%;
+    transition: all 0.5s ease;
+  }
+  .timeline-marker p {
+    line-height: 1;
+    margin: 0%;
+    padding: 0%;
+  }
+  .year-wrapper {
+    height: 5.88vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .year-wrapper p {
+    height: 50%;
+    margin-bottom: 0;
+  }
+  .year-wrapper img {
+    height: 50%;
+    padding: 0;
+    transform: rotate(90deg);
+  }
+  
