@@ -15,24 +15,26 @@
     <div id="fullpage">
         <section class="section ">
             <div class="inner-section-div is1">
-                <img src="./Assets/profilePic.png" alt="" style="width: 70%; max-width: 350px;">
+                <img src="./Assets/profilePic.png" alt="" style="width: 65%; max-width: 300px;">
                 <h1 class="section-heading m-5">drew murr</h1>
-                <p>{A little bit about what makes you unique and your goals and values}</p>
-                <p class="p-2" style="border-top:5px dotted blue;">Here are some projects I've worked on</p>
+                <div class="section-info d-flex justify-content-center align-items-center flex-column">
+                    <p>{A little bit about what makes you unique and your goals and values}</p>
+                    <p class="p-2" style="border-top:5px dotted rgb(74, 143, 184); max-width: 400px;">Here are some projects I've worked on</p>
+                </div>
             </div>
         </section>
         <section class="section ">
             <div class="inner-section-div is2">
                 <img src="./Assets/armyLogo.png" alt="" class="mt-4">
-                <h1 class="section-heading m-5 text-center">
+                <h2 class="section-heading my-4 text-center">
                     Army<span class="fs-5" style="display: block;">(Soldier)</span>
-                </h1>
-                <p>
+                </h2>
+                <p class="section-info">
                     I had the great pleasure of serving among some of the finest 
                     Americans in the United States Army. Service and sacrifice are
                     the defining characteristics of these patriots. 
                 </p>
-                <img src="./Assets/armyMain.png" alt="" style="width: 80%; max-width: 600px;">
+                <img src="./Assets/armyMain.png" alt="" style="width: 60%; max-width: 600px;">
                 <div class="links mt-3" >
                     <h3>Links:</h3>
                     <p>Unit Wiki</p>    
@@ -41,10 +43,10 @@
         </section>
         <section class="section ">
             <div class="inner-section-div is3">
-                <h1 class="section-heading m-5 text-center">
+                <h2 class="section-heading m-5 text-center">
                     Oil & Gas<span class="fs-5" style="display: block;">(Engineer)</span>
-                </h1>                
-                <p class="mb-5">
+                </h2>                
+                <p class="mb-5 section-info">
                     The men and women working on Oil and Gas drilling 
                     rigs across the country demonstrated work ethic 
                     beyond measure. Working 100 consecutive 12 hour 
@@ -62,10 +64,10 @@
         </section>
         <section class="section ">
             <div class="inner-section-div is4">
-                <h1 class="section-heading m-5 text-center">
+                <h2 class="section-heading m-5 text-center">
                     Roil Services<span class="fs-5" style="display: block;">(Founder-defunct)</span>
-                </h1>
-                <p>
+                </h2>
+                <p class="section-info">
                     Leaving a lucrative career to chase the startup dragon is 
                     an adventure not to be taken lightly. I am proud to say 
                     that while the company may be defunct, some of the  
@@ -80,10 +82,10 @@
         </section>
         <section class="section ">
             <div class="inner-section-div is5">
-                <h1 class="section-heading m-5 text-center">
+                <h2 class="section-heading m-5 text-center">
                     Client Connect<span class="fs-5" style="display: block;">(Product Owner)</span>
-                </h1>  
-                <p>
+                </h2>  
+                <p class="section-info">
                     The nature of opportunity is a peculiar thing. A closed door in Oil  
                     and Gas led to an open door building communication technology 
                     serving personal injury attorneys across the United States. While  
@@ -91,7 +93,7 @@
                     am proud to say the customers are happy, the company is profit- 
                     able, and everyone had a positive outcome! 
                 </p>
-                <img class="mb-5" src="./Assets/clientConnect.png" alt="">
+                <img class="my-5" src="./Assets/clientConnect.png" alt="" style="width: 65%; max-width: 600px;">
                 <div class="links mt-5">
                     <h3>Links:</h3>
                 </div>
@@ -99,11 +101,11 @@
         </section>
         <section class="section ">
             <div class="inner-section-div is6">
-                <h1 class="section-heading m-5 text-center">
+                <h2 class="section-heading m-5 text-center">
                     The Butterfly Project<span class="fs-5" style="display: block;">(Architect)</span>
-                </h1> 
+                </h2> 
                 <img src="./Assets/butterflyProject.png" alt="">
-                <p class="my-5">
+                <p class="my-5 section-info">
                     Solving hard business problems with intuitive applications is what 
                     wakes me up in the morning. The exciting thing about the Butter-
                     fly Project is the dichotomy between the complecity of the prob- 
@@ -116,17 +118,17 @@
         </section>
         <section class="section ">
             <div class="inner-section-div is7">
-                <h1 class="section-heading m-5 text-center">
+                <h2 class="section-heading m-5 text-center">
                     Banjaxed<span class="fs-5" style="display: block;">(Founder)</span>
-                </h1> 
-                <p>The exciting thing about the Salesforce Ecosystem is that com- 
+                </h2> 
+                <p class="section-info">The exciting thing about the Salesforce Ecosystem is that com- 
                     plex business problems are plentiful and the need for unique solu- 
                     tions is great. Using the technology of the Butterfly Project and 
                     the hive mind of our Solution Architects, Banjaxed is the spirit 
                     guide for enterprises on Salesforce.
                 </p>
                 <div class="is7-logos my-3 d-flex flex-column justify-content-center align-items-center">
-                    <img src="./Assets/banjaxedAnim.png" alt="">
+                    <img class="mb-4" style="max-width: 100px;" src="./Assets/banjaxedAnim.png" alt="">
                     <img src="./Assets/banjaxedName.png" alt="">
                 </div>
                 <div class="links mt-5">
@@ -137,109 +139,126 @@
             </div>
         </section>
     </div>
-    <div class="timeline-wrapper">
-        <div class="timeline-marker">
-            <p>{</p>
+    <div class="timeline-wrapper" style="color: rgb(245, 164, 13);font-weight: 700;">
+        <div class="timeline-marker" style="font-weight: 500;">
+            <canvas id="myCanvas" width="50" height="300"></canvas>
         </div>
         <div class="timeline-years">
             <div class="year-wrapper">
-                <img src="https://img.icons8.com/emoji/48/000000/wavy-dash-emoji.png"/>
+                <span class="year-divider">|</span>
+                <!-- <img src="https://img.icons8.com/emoji/48/000000/wavy-dash-emoji.png"/> -->
                 <p>1984</p>
             </div>
         </div>
         <div class="timeline-years">
             <div class="year-wrapper">
-                <img src="https://img.icons8.com/emoji/48/000000/wavy-dash-emoji.png"/>
+                <span class="year-divider">|</span>
+                <!-- <img src="https://img.icons8.com/emoji/48/000000/wavy-dash-emoji.png"/> -->
                 <p>2007</p>
             </div>
         </div>
         <div class="timeline-years">
             <div class="year-wrapper">
-                <img src="https://img.icons8.com/emoji/48/000000/wavy-dash-emoji.png"/>
+                <span class="year-divider">|</span>
+                <!-- <img src="https://img.icons8.com/emoji/48/000000/wavy-dash-emoji.png"/> -->
                 <p>2008</p>
             </div>
         </div>
         <div class="timeline-years">
             <div class="year-wrapper">
-                <img src="https://img.icons8.com/emoji/48/000000/wavy-dash-emoji.png"/>
+                <span class="year-divider">|</span>
+                <!-- <img src="https://img.icons8.com/emoji/48/000000/wavy-dash-emoji.png"/> -->
                 <p>2009</p>
             </div>
         </div>
         <div class="timeline-years">
             <div class="year-wrapper">
-                <img src="https://img.icons8.com/emoji/48/000000/wavy-dash-emoji.png"/>
+                <span class="year-divider">|</span>
+                <!-- <img src="https://img.icons8.com/emoji/48/000000/wavy-dash-emoji.png"/> -->
                 <p>2010</p>
             </div>
         </div>
         <div class="timeline-years">
             <div class="year-wrapper">
-                <img src="https://img.icons8.com/emoji/48/000000/wavy-dash-emoji.png"/>
+                <span class="year-divider">|</span>
+                <!-- <img src="https://img.icons8.com/emoji/48/000000/wavy-dash-emoji.png"/> -->
                 <p>2011</p>
             </div>
         </div>
         <div class="timeline-years">
             <div class="year-wrapper">
-                <img src="https://img.icons8.com/emoji/48/000000/wavy-dash-emoji.png"/>
+                <span class="year-divider">|</span>
+                <!-- <img src="https://img.icons8.com/emoji/48/000000/wavy-dash-emoji.png"/> -->
                 <p>2012</p>
             </div>
         </div>
         <div class="timeline-years">
             <div class="year-wrapper">
-                <img src="https://img.icons8.com/emoji/48/000000/wavy-dash-emoji.png"/>
+                <span class="year-divider">|</span>
+                <!-- <img src="https://img.icons8.com/emoji/48/000000/wavy-dash-emoji.png"/> -->
                 <p>2013</p>
             </div>
         </div>
         <div class="timeline-years">
             <div class="year-wrapper">
-                <img src="https://img.icons8.com/emoji/48/000000/wavy-dash-emoji.png"/>
+                <span class="year-divider">|</span>
+                <!-- <img src="https://img.icons8.com/emoji/48/000000/wavy-dash-emoji.png"/> -->
                 <p>2014</p>
             </div>
         </div>
         <div class="timeline-years">
             <div class="year-wrapper">
-                <img src="https://img.icons8.com/emoji/48/000000/wavy-dash-emoji.png"/>
+                <span class="year-divider">|</span>
+                <!-- <img src="https://img.icons8.com/emoji/48/000000/wavy-dash-emoji.png"/> -->
                 <p>2015</p>
             </div>
         </div>
         <div class="timeline-years">
             <div class="year-wrapper">
-                <img src="https://img.icons8.com/emoji/48/000000/wavy-dash-emoji.png"/>
+                <span class="year-divider">|</span>
+                <!-- <img src="https://img.icons8.com/emoji/48/000000/wavy-dash-emoji.png"/> -->
                 <p>2016</p>
             </div>
         </div>
         <div class="timeline-years">
             <div class="year-wrapper">
-                <img src="https://img.icons8.com/emoji/48/000000/wavy-dash-emoji.png"/>
+                <span class="year-divider">|</span>
+                <!-- <img src="https://img.icons8.com/emoji/48/000000/wavy-dash-emoji.png"/> -->
                 <p>2017</p>
             </div>
         </div>
         <div class="timeline-years">
             <div class="year-wrapper">
-                <img src="https://img.icons8.com/emoji/48/000000/wavy-dash-emoji.png"/>
+                <span class="year-divider">|</span>
+                <!-- <img src="https://img.icons8.com/emoji/48/000000/wavy-dash-emoji.png"/> -->
                 <p>2018</p>
             </div>
         </div>
         <div class="timeline-years">
             <div class="year-wrapper">
-                <img src="https://img.icons8.com/emoji/48/000000/wavy-dash-emoji.png"/>
+                <span class="year-divider">|</span>
+                <!-- <img src="https://img.icons8.com/emoji/48/000000/wavy-dash-emoji.png"/> -->
                 <p>2019</p>
             </div>
         </div>
         <div class="timeline-years">
             <div class="year-wrapper">
-                <img src="https://img.icons8.com/emoji/48/000000/wavy-dash-emoji.png"/>
+                <span class="year-divider">|</span>
+                <!-- <img src="https://img.icons8.com/emoji/48/000000/wavy-dash-emoji.png"/> -->
                 <p>2020</p>
             </div>
         </div>
         <div class="timeline-years">
             <div class="year-wrapper">
-                <img src="https://img.icons8.com/emoji/48/000000/wavy-dash-emoji.png"/>
+                <span class="year-divider">|</span>
+                <!-- <img src="https://img.icons8.com/emoji/48/000000/wavy-dash-emoji.png"/> -->
                 <p>2021</p>
             </div>
         </div>
         <div class="timeline-years">
             <div class="year-wrapper">
-                <img src="https://img.icons8.com/emoji/48/000000/wavy-dash-emoji.png"/>
+                <span class="year-divider">|</span>
+                <!-- <img src="https://img.icons8.com/emoji/48/000000/wavy-dash-emoji.png"/> -->
                 <p>now</p>
             </div>
         </div>

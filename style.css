@@ -14,15 +14,20 @@ body {
   line-height: 1.25;
   font-family: "Courier New", Courier, monospace;
   font-size: 16px;
-  font-weight: 500;
-  color: rgb(3, 54, 83);
+  font-weight: 600;
+  color: rgb(74, 143, 184);
   background-color: rgb(243, 202, 126);
   background: url(./Assets/graphBg.png);
+}
+h2,
+.links > h3 {
+  font-weight: 700;
+  color: rgb(44, 107, 144);
 }
 
 .left-code-section,
 .right-code-section {
-  background-color: rgb(230, 205, 214);
+  background-color: rgb(3, 54, 83);
   background: url(./Assets/codeBg.png);
   background-size: cover;
   background-position: left;
@@ -46,9 +51,11 @@ body {
 }
 
 .section {
+  //border: 1px solid black;
   position: relative;
 }
 .inner-section-div {
+  max-height: 100vh;
   width: 80%;
   max-width: 1500px;
   //border: 2px solid black;
@@ -82,6 +89,7 @@ body {
   top: 0%;
   right: 20%;
   display: flex;
+  gap: 0em;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -90,7 +98,7 @@ body {
   font-size: 4.75rem;
   position: absolute;
   top: 0;
-  right: 100%;
+  right: 90%;
   transition: all 0.5s ease;
 }
 .timeline-marker p {
@@ -109,8 +117,8 @@ body {
   height: 50%;
   margin-bottom: 0;
 }
-.year-wrapper img {
-  height: 50%;
+.year-divider {
+  margin: 0;
   padding: 0;
-  transform: rotate(90deg);
+  font-size: 1.25rem;
 }
