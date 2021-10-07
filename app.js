@@ -20,6 +20,7 @@ window.onresize=calculateTopMargin;
 
 new fullpage("#fullpage",{
   autoScrolling:true,
+  scrollingSpeed:1250,
   //navigation:true,
   fitToSection:true,
   marginLeft:"auto",
