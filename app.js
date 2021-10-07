@@ -1,14 +1,18 @@
 const pageScrollButton = document.querySelector(".page-scroll-button");
 const timelineMarker=document.querySelector(".timeline-marker");
+const timelineWrapper=document.querySelector(".timeline-wrapper");
+const yearWrapper=document.querySelector(".year-wrapper");
+var canvas = document.getElementById('myCanvas');
+var context = canvas.getContext('2d');
 
 const calculateTopMargin=()=>{
-  var topMargin=(document.querySelector(".year-wrapper").clientHeight)/2;
+  var topMargin=(yearWrapper.clientHeight)/2;
   timelineMarker.style.marginTop=topMargin+"px";
 }
 
 const moveMarker=(index)=>{
-  var oneYearWapperHeight=(document.querySelector(".year-wrapper").clientHeight);
-  timelineMarker.style.top=index*oneYearWapperHeight + "px"
+  var oneYearWapperHeight=yearWrapper.clientHeight;
+  timelineMarker.style.top = index*oneYearWapperHeight + "px"
 }
 
 calculateTopMargin();
@@ -24,21 +28,50 @@ new fullpage("#fullpage",{
   onLeave: (origin, destination, direction) => {
     if(destination.index===0){
       pageScrollButton.style.color = "#87e5ff";
-      moveMarker(destination.index);
+      timelineWrapper.style.opacity="0";
+      moveMarker(1);
     }
     else if(destination.index===1){
       pageScrollButton.style.color = "#8DC8D9";
-      moveMarker(destination.index);
+      timelineWrapper.style.opacity="1";
+      canvas.height=(yearWrapper.clientHeight)*5.5;
+      markerHeight();
+      moveMarker(1);
 
     }
     else if(destination.index===2){
       pageScrollButton.style.color = "#43A3BD";
-      moveMarker(destination.index);
+      canvas.height=(yearWrapper.clientHeight)*4.5;
+      markerHeight();
+      moveMarker(7);
 
     }
     else if(destination.index===3){
       pageScrollButton.style.color = "#6A97A3";
-      moveMarker(destination.index);
+      canvas.height=(yearWrapper.clientHeight)*1.5;
+      markerHeight();
+      moveMarker(11);
+
+    }
+    else if(destination.index===4){
+      pageScrollButton.style.color = "#6A97A3";
+      canvas.height=(yearWrapper.clientHeight)*1.5;
+      markerHeight();
+      moveMarker(12);
+
+    }
+    else if(destination.index===5){
+      pageScrollButton.style.color = "#6A97A3";
+      canvas.height=(yearWrapper.clientHeight)*1.5;
+      markerHeight();
+      moveMarker(13);
+
+    }
+    else if(destination.index===6){
+      pageScrollButton.style.color = "#6A97A3";
+      canvas.height=(yearWrapper.clientHeight)*1.5;
+      markerHeight();
+      moveMarker(14);
 
     }
   }
@@ -49,9 +82,6 @@ pageScrollButton.addEventListener("click",function(){
 })
 
 const markerHeight=()=>{
-  var canvas = document.getElementById('myCanvas');
-  var context = canvas.getContext('2d');
-  
   var y = canvas.height;
   var linelength = (y - 60) / 2;
   
@@ -70,4 +100,4 @@ const markerHeight=()=>{
   context.stroke();
 }
 
-markerHeight();
+// markerHeight();

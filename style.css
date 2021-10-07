@@ -93,6 +93,7 @@ h2,
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  transition: all 1s ease;
 }
 .timeline-marker {
   font-size: 4.75rem;
@@ -100,6 +101,9 @@ h2,
   top: 0;
   right: 90%;
   transition: all 0.5s ease;
+}
+#myCanvas {
+  transition: height 0.3s ease-in;
 }
 .timeline-marker p {
   line-height: 1;
