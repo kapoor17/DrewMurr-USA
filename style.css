@@ -20,7 +20,7 @@ body {
   background: url(./Assets/graphBg.png);
 }
 h2,
-.links > h3 {
+.links > * {
   font-weight: 700;
   color: rgb(44, 107, 144);
 }
@@ -51,6 +51,7 @@ h2,
 }
 
 .section {
+  max-height: 100vh;
   //border: 1px solid black;
   position: relative;
 }
@@ -71,7 +72,12 @@ h2,
 .inner-section-div > * {
   //border: 2px solid black;
 }
-
+.section-heading {
+  max-width: 850px;
+}
+.section-info {
+  max-width: 600px;
+}
 .page-scroll-button {
   color: #87e5ff;
   font-size: 2rem;
@@ -96,14 +102,13 @@ h2,
   transition: all 1s ease;
 }
 .timeline-marker {
-  font-size: 4.75rem;
   position: absolute;
   top: 0;
-  right: 90%;
-  transition: all 0.5s ease;
+  right: 65%;
+  transition: all 1s ease;
 }
 #myCanvas {
-  transition: height 0.3s ease-in;
+  transition: stroke-height 0.5s ease-in;
 }
 .timeline-marker p {
   line-height: 1;

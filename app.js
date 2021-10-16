@@ -90,6 +90,7 @@ const markerHeight=()=>{
   context.beginPath();
   context.moveTo(27, 10);
   context.arcTo(20, 10, 20, 20, 7);
+  
   context.strokeStyle="rgb(245, 164, 13)"
   
   context.lineTo(20, 20 + linelength);
