@@ -28,48 +28,48 @@ new fullpage("#fullpage",{
   
   onLeave: (origin, destination, direction) => {
     if(destination.index===0){
-      pageScrollButton.style.color = "#87e5ff";
+      pageScrollButton.style.color = "#a0dcff";
       timelineWrapper.style.opacity="0";
       moveMarker(1);
     }
     else if(destination.index===1){
-      pageScrollButton.style.color = "#8DC8D9";
-      timelineWrapper.style.opacity="1";
+      pageScrollButton.style.color = "#6cbff0";
+      timelineWrapper.style.opacity="0.75";
       canvas.height=(yearWrapper.clientHeight)*5.5;
       markerHeight();
       moveMarker(1);
 
     }
     else if(destination.index===2){
-      pageScrollButton.style.color = "#43A3BD";
+      pageScrollButton.style.color = "#4ea2d3";
       canvas.height=(yearWrapper.clientHeight)*4.5;
       markerHeight();
       moveMarker(7);
 
     }
     else if(destination.index===3){
-      pageScrollButton.style.color = "#6A97A3";
+      pageScrollButton.style.color = "#3684b1";
       canvas.height=(yearWrapper.clientHeight)*1.5;
       markerHeight();
       moveMarker(11);
 
     }
     else if(destination.index===4){
-      pageScrollButton.style.color = "#6A97A3";
+      pageScrollButton.style.color = "#2d7097";
       canvas.height=(yearWrapper.clientHeight)*1.5;
       markerHeight();
       moveMarker(12);
 
     }
     else if(destination.index===5){
-      pageScrollButton.style.color = "#6A97A3";
+      pageScrollButton.style.color = "#105983";
       canvas.height=(yearWrapper.clientHeight)*1.5;
       markerHeight();
       moveMarker(13);
 
     }
     else if(destination.index===6){
-      pageScrollButton.style.color = "#6A97A3";
+      pageScrollButton.style.color = "#033653";
       canvas.height=(yearWrapper.clientHeight)*1.5;
       markerHeight();
       moveMarker(14);
@@ -101,5 +101,3 @@ const markerHeight=()=>{
   
   context.stroke();
 }
-
-// markerHeight();
