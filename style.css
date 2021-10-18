@@ -3,6 +3,10 @@
   padding: 0;
   box-sizing: border-box;
 }
+@font-face {
+  font-family: brockscript;
+  src: url('./Assets/fonts/BrockScript.otf');
+}
 img {
   max-width: 100%;
 }
@@ -15,6 +19,7 @@ body {
   color: rgb(74, 143, 184);
   background-color: rgb(243, 202, 126);
   background: url(./Assets/media/graphBg.png);
+  background-size: contain;
 }
 h2,
 .links > * {
@@ -105,6 +110,7 @@ h2,
 }
 .year-wrapper {
   height: 5.88vh;
+  font-family: brockscript;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -112,7 +118,9 @@ h2,
 }
 .year-wrapper p {
   height: 50%;
+  font-family: brockscript;
   margin-bottom: 0;
+  font-size:20px;
 }
 .year-divider {
   margin: 0;
