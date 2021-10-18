@@ -119,6 +119,11 @@ h2,
   padding: 0;
   font-size: 1.25rem;
 }
+@media (min-width: 768px) {
+  .is4 img {
+    top: -60%;
+  }
+}
 @media (max-width: 768px) {
   .timeline-wrapper {
     padding-right: 5px;
@@ -134,5 +139,8 @@ h2,
   }
   .timeline-wrapper {
     right: 0%;
+  }
+  .is4 img {
+    top: -40%;
   }
 }
