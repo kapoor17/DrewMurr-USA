@@ -45,14 +45,12 @@ h2,
 }
 .section {
   height: 100vh;
-  //border: 1px solid black;
   position: relative;
 }
 .inner-section-div {
   max-height: 100vh;
   width: 80%;
   max-width: 1500px;
-  //border: 2px solid black;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -61,9 +59,6 @@ h2,
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-.inner-section-div > * {
-  //border: 2px solid black;
 }
 .section-heading {
   max-width: 850px;
