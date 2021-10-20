@@ -39,7 +39,7 @@ new fullpage("#fullpage",{
     }
     else if(destination.index===1){
       pageScrollButton.style.color = "#6cbff0";
-      timelineWrapper.style.opacity="0.75";
+      timelineWrapper.style.opacity="1";
       markerConfig("./Assets/animations/marker-4-animation.json",5);
       moveMarker(1);
 
