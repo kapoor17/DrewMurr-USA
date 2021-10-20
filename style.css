@@ -118,9 +118,22 @@ h2,
   margin-bottom: 0.25rem;
   border-right: 3px dotted rgb(245, 164, 13);
 }
+.is3 img {
+  width: 55%;
+  max-width: 250px;
+  z-index: -2;
+  left: -10%;
+}
+.is4 img {
+  width: 60%;
+  max-width: 250px;
+  z-index: -2;
+}
 @media (min-width: 768px) {
   .is4 img {
-    top: -60%;
+    position: absolute;
+    top: -50%;
+    left: -10%;
   }
 }
 @media (max-width: 768px) {
@@ -139,7 +152,10 @@ h2,
   .timeline-wrapper {
     right: 0%;
   }
+  .is3 img {
+    top: -67px;
+  }
   .is4 img {
-    top: -40%;
+    position: block;
   }
 }
