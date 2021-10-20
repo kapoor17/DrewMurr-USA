@@ -100,29 +100,20 @@ h2,
   right: 65%;
   transition: all 1s ease;
 }
-#myCanvas {
-  transition: stroke-height 0.5s ease-in;
-}
-.timeline-marker p {
-  line-height: 1;
-  margin: 0%;
-  padding: 0%;
-}
 .year-wrapper {
-  height: 5.88vh;
+  height: calc(100vh / 17);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.year-wrapper p {
+.year-wrapper > * {
   height: 50%;
   margin-bottom: 0;
 }
 .year-divider {
-  margin: 0;
-  padding: 0;
-  font-size: 1.25rem;
+  margin-bottom: 0.25rem;
+  border-right: 3px dotted rgb(245, 164, 13);
 }
 @media (min-width: 768px) {
   .is4 img {
