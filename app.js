@@ -33,39 +33,39 @@ new fullpage("#fullpage",{
   
   onLeave: (origin, destination, direction) => {
     if(destination.index===0){
-      pageScrollButton.style.color = "#a0dcff";
+      pageScrollButton.style.backgroundColor = "#a0dcff";
       timelineWrapper.style.opacity="1";
       moveMarker(0);
     }
     else if(destination.index===1){
-      pageScrollButton.style.color = "#6cbff0";
+      pageScrollButton.style.backgroundColor = "#6cbff0";
       timelineWrapper.style.opacity="1";
       markerConfig("./Assets/animations/marker-4-animation.json",5);
       moveMarker(1);
 
     }
     else if(destination.index===2){
-      pageScrollButton.style.color = "#4ea2d3";
+      pageScrollButton.style.backgroundColor = "#4ea2d3";
       markerConfig("./Assets/animations/marker-3-animation.json",4);
       moveMarker(7);
     }
     else if(destination.index===3){
-      pageScrollButton.style.color = "#3684b1";
+      pageScrollButton.style.backgroundColor = "#3684b1";
       markerConfig("./Assets/animations/marker-2-animation.json",1);
       moveMarker(11);
     }
     else if(destination.index===4){
-      pageScrollButton.style.color = "#2d7097";
+      pageScrollButton.style.backgroundColor = "#2d7097";
       markerConfig("./Assets/animations/marker-1-animation.json",1);
       moveMarker(12);
     }
     else if(destination.index===5){
-      pageScrollButton.style.color = "#105983";
+      pageScrollButton.style.backgroundColor = "#105983";
       markerConfig("./Assets/animations/marker-2-animation.json",1);
       moveMarker(13);
     }
     else if(destination.index===6){
-      pageScrollButton.style.color = "#033653";
+      pageScrollButton.style.backgroundColor = "#033653";
       markerConfig("./Assets/animations/marker-1-animation.json",1);
       moveMarker(14);
     }

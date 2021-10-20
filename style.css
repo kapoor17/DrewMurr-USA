@@ -3,6 +3,10 @@
   padding: 0;
   box-sizing: border-box;
 }
+@font-face {
+  font-family: chiro;
+  src: url("./Assets/fonts/segoe.ttf");
+}
 img {
   max-width: 100%;
 }
@@ -13,7 +17,6 @@ body {
   font-family: "Courier New", Courier, monospace;
   font-weight: 600;
   color: rgb(74, 143, 184);
-  background-color: rgb(243, 202, 126);
   background: url(./Assets/media/graphBg.png);
 }
 h2,
@@ -45,14 +48,12 @@ h2,
 }
 .section {
   height: 100vh;
-  //border: 1px solid black;
   position: relative;
 }
 .inner-section-div {
   max-height: 100vh;
   width: 80%;
   max-width: 1500px;
-  //border: 2px solid black;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -62,9 +63,6 @@ h2,
   justify-content: center;
   align-items: center;
 }
-.inner-section-div > * {
-  //border: 2px solid black;
-}
 .section-heading {
   max-width: 850px;
 }
@@ -72,10 +70,17 @@ h2,
   max-width: 600px;
 }
 .page-scroll-button {
-  color: #87e5ff;
-  font-size: 2rem;
+  background-color: #87e5ff;
+  font-family: chiro;
+  color:white;
+  font-size: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  width:50px;
+  height:50px;
   position: absolute;
-  bottom: 0;
+  bottom: 0px;
+  border-radius: 10px;
   left: 50%;
   transform: translate(-50%, 0%);
   cursor: pointer;
@@ -130,6 +135,7 @@ h2,
   z-index: -2;
 }
 @media (min-width: 768px) {
+
   .is4 img {
     position: absolute;
     top: -50%;
