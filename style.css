@@ -134,8 +134,27 @@ h2,
   max-width: 250px;
   z-index: -2;
 }
-@media (min-width: 768px) {
+section#oilSection{
+  background-image: url('./Assets/media/oilDrill.png');
+  background-repeat: no-repeat;
+  background-size:contain;
+  background-position: 0px 5px;
+}
 
+
+@media (max-width: 920px) {
+  section#oilSection{
+    background-image: url('./Assets/media/oilDrill.png');
+    background-repeat: no-repeat;
+    background-size:200px;
+    background-position: 0px 5px;
+  }
+  #oilSection .links{
+    margin-top: 8rem!important;
+  }
+}
+@media (min-width: 768px) {
+ 
   .is4 img {
     position: absolute;
     top: -50%;

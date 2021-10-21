@@ -14,10 +14,11 @@ const moveMarker=(index)=>{
   timelineMarker.style.top = (index*oneYearWapperHeight)+ 5 + "px" //5px for added margin after the border
 }
 
-const markerConfig=(source,n)=>{
+const markerConfig=(source,n,width='80px')=>{
   var oneYearWapperHeight=yearWrapper.clientHeight;
   lottiePlayer.load(source);
   lottiePlayer.style.height=(oneYearWapperHeight)*n+"px";
+  lottiePlayer.style.width=width;
 }
 
 calculateTopMargin();
@@ -46,27 +47,27 @@ new fullpage("#fullpage",{
     }
     else if(destination.index===2){
       pageScrollButton.style.backgroundColor = "#4ea2d3";
-      markerConfig("./Assets/animations/marker-3-animation.json",4);
+      markerConfig("./Assets/animations/marker-3-animation.json",4,'70px');
       moveMarker(7);
     }
     else if(destination.index===3){
       pageScrollButton.style.backgroundColor = "#3684b1";
-      markerConfig("./Assets/animations/marker-2-animation.json",1);
+      markerConfig("./Assets/animations/marker-2-animation.json",1,'55px');
       moveMarker(11);
     }
     else if(destination.index===4){
       pageScrollButton.style.backgroundColor = "#2d7097";
-      markerConfig("./Assets/animations/marker-1-animation.json",1);
+      markerConfig("./Assets/animations/marker-1-animation.json",1,'55px');
       moveMarker(12);
     }
     else if(destination.index===5){
       pageScrollButton.style.backgroundColor = "#105983";
-      markerConfig("./Assets/animations/marker-2-animation.json",1);
+      markerConfig("./Assets/animations/marker-2-animation.json",1,'55px');
       moveMarker(13);
     }
     else if(destination.index===6){
       pageScrollButton.style.backgroundColor = "#033653";
-      markerConfig("./Assets/animations/marker-1-animation.json",1);
+      markerConfig("./Assets/animations/marker-1-animation.json",1,'55px');
       moveMarker(14);
     }
   }
